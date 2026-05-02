@@ -2,6 +2,8 @@ name: IKDRouteTable
 displayField: Route
 fields:
   - name: Route
-    type: link
-    targets: [IKDRoute]
-  - name: Unknown0
+    type: array
+    count: 2
+    fields:
+      - type: link
+        targets: [IKDRoute]
